@@ -24,6 +24,7 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
  
 ***3.***  ***Xeon.xml***   
 
+    *****************************************************************************************
     Technology 65 nm
     Using Long Channel Devices When Appropriate
     Interconnect metal projection= aggressive interconnect technology projection
@@ -68,10 +69,54 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
 
     *****************************************************************************************
 
-Ως energy effiency ορίζεται το πηλίκο των συνολικών εντολών που εκτελούνται στον χρόνο προς την ισχύ που χρειάζεται ο επεξεργαστής για να τις εκτελέσει.Οπότε ορίζεται από τον τύπο 
-Energy_eff = instrction_rate / (Runtime Dynamic + Leakage Power)  
-Για τον Arm έστω a το instruction_rate, οπότε για τον Xeon το instruction_rate b=40*a.      	
-ARM : Energy_eff = a / (2.96053 + 0.108687) = 9.54 * a   
-Χeon : Energy_eff = b / (72.9199 + 36.8319) = 40 * a / 109.75 = 0.36 * a   
+ ***ARM_A9_2GHz.xml***  
+ 
+    *****************************************************************************************
+    Technology 40 nm
+    Using Long Channel Devices When Appropriate
+    Interconnect metal projection= conservative interconnect technology projection
+    Core clock Rate(MHz) 2000
+
+    *****************************************************************************************
+    Processor:
+      Area = 5.39698 mm^2
+      Peak Power = 1.74189 W
+      Total Leakage = 0.108687 W
+      Peak Dynamic = 1.6332 W
+      Subthreshold Leakage = 0.0523094 W
+      Gate Leakage = 0.0563774 W
+      Runtime Dynamic = 2.96053 W
+
+    Total Cores: 2 cores 
+    Device Type= ITRS low operating power device type
+      Area = 4.84735 mm^2
+      Peak Dynamic = 1.57159 W
+      Subthreshold Leakage = 0.0484486 W
+      Gate Leakage = 0.0501375 W
+      Runtime Dynamic = 1.06575 W
+
+    Total First Level Directory: 
+    Device Type= ITRS low operating power device type
+      Area = 0.535391 mm^2
+      Peak Dynamic = 0.045212 W
+      Subthreshold Leakage = 0.00370577 W
+      Gate Leakage = 0.0060234 W
+      Runtime Dynamic = 1.81276 W
+
+    Total NoCs (Network/Bus): 
+    Device Type= ITRS low operating power device type
+      Area = 0.014239 mm^2
+      Peak Dynamic = 0.0164048 W
+      Subthreshold Leakage = 0.000155022 W
+      Gate Leakage = 0.000216526 W
+      Runtime Dynamic = 0.0820239 W
+
+    *****************************************************************************************
+
+Ως energy effiency ορίζεται το πηλίκο των συνολικών εντολών που εκτελούνται στον χρόνο προς την ισχύ που χρειάζεται ο επεξεργαστής για να τις εκτελέσει.Οπότε ορίζεται από τον τύπο:   
+>Energy_eff = instrction_rate / (Runtime Dynamic + Leakage Power)  
+Για τον Arm έστω a το instruction_rate, οπότε για τον Xeon το instruction_rate b=40*a.     	
+>ARM : Energy_eff = a / (2.96053 + 0.108687) = 9.54 * a   
+>Χeon : Energy_eff = b / (72.9199 + 36.8319) = 40 * a / 109.75 = 0.36 * a   
 Άρα παρατηρούμε ότι ο ARM είναι 26,5 φορές πιο energy efficient για το δεδομένο πρόγραμμα.
 
