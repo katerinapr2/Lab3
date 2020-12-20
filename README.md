@@ -23,7 +23,6 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
  
  
 ***3.***  ***Xeon.xml***   
->
 *****************************************************************************************
   Technology 65 nm
   Using Long Channel Devices When Appropriate
@@ -31,7 +30,7 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
   Core clock Rate(MHz) 3400
 
 *****************************************************************************************
-Processor: 
+Processor:
   Area = 410.507 mm^2
   Peak Power = 134.938 W
   Total Leakage = 36.8319 W
@@ -41,7 +40,7 @@ Processor:
   Gate Leakage = 1.66871 W
   Runtime Dynamic = 72.9199 W
 
-  Total Cores: 2 cores 
+  Total Cores: 2 cores
   Device Type= ITRS high performance device type
     Area = 111.713 mm^2
     Peak Dynamic = 78.5978 W
@@ -69,7 +68,7 @@ Processor:
     Runtime Dynamic = 12.807 W
 
 *****************************************************************************************
->
+
 
 Ως energy effiency ορίζεται το πηλίκο των συνολικών εντολών που εκτελούνται στον χρόνο προς την ισχύ που χρειάζεται ο επεξεργαστής για να τις εκτελέσει.Οπότε ορίζεται από τον τύπο 
 Energy_eff = instrction_rate / (Runtime Dynamic + Leakage Power)  
@@ -78,6 +77,48 @@ ARM : Energy_eff = a / (2.96053 + 0.108687) = 9.54 * a
 Χeon : Energy_eff = b / (72.9199 + 36.8319) = 40 * a / 109.75 = 0.36 * a   
 Άρα παρατηρούμε ότι ο ARM είναι 26,5 φορές πιο energy efficient για το δεδομένο πρόγραμμα.
 
+    Technology 65 nm
+    Using Long Channel Devices When Appropriate
+    Interconnect metal projection= aggressive interconnect technology projection
+    Core clock Rate(MHz) 3400
+    *****************************************************************************************
+    Processor:
+      Area = 410.507 mm^2
+      Peak Power = 134.938 W
+      Total Leakage = 36.8319 W
+      Peak Dynamic = 98.1063 W
+      Subthreshold Leakage = 35.1632 W
+      Subthreshold Leakage with power gating = 16.3977 W
+      Gate Leakage = 1.66871 W
+      Runtime Dynamic = 72.9199 W
 
+      Total Cores: 2 cores 
+      Device Type= ITRS high performance device type
+    Area = 111.713 mm^2
+    Peak Dynamic = 78.5978 W
+    Subthreshold Leakage = 24.1131 W
+    Subthreshold Leakage with power gating = 10.3006 W
+    Gate Leakage = 1.49026 W
+    Runtime Dynamic = 55.7891 W
+
+     Total L3s: 
+     Device Type= ITRS high performance device type
+    Area = 293.281 mm^2
+    Peak Dynamic = 6.70159 W
+    Subthreshold Leakage = 10.9824 W
+    Subthreshold Leakage with power gating = 6.06659 W
+    Gate Leakage = 0.165767 W
+    Runtime Dynamic = 4.32382 W
+
+    Total NoCs (Network/Bus): 
+     Device Type= ITRS high performance device type
+    Area = 5.51364 mm^2
+    Peak Dynamic = 12.807 W
+    Subthreshold Leakage = 0.0678232 W
+    Subthreshold Leakage with power gating = 0.0305204 W
+    Gate Leakage = 0.0126787 W
+    Runtime Dynamic = 12.807 W
+
+*****************************************************************************************
 
 
