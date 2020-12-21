@@ -123,7 +123,168 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
 
 Άρα παρατηρούμε ότι ο ARM είναι 26,5 φορές πιο energy efficient για το δεδομένο πρόγραμμα.   
 
-***Βήμα 2ο***
+***Βήμα 2ο***   
+**1.**  
+Καταναλώσεις ενέργειας:  
+Για το **_bzip_**:  
+* cacheline_16 --> energy is 78.839680 mJ      
+* cacheline 512 --> energy is 961.776440 mJ  
+* cacheline 1024 --> energy is 3443.029590 mJ  
+
+* l1dcache_associativity_1 --> energy is 124.996337 mJ
+* l1dcache_associativity_4 --> energy is 100.334350 mJ
+* l1dcache_associativity_8 --> energy is 108.405443 mJ
+* l1dcache_associativity_16 --> energy is 131.777040 mJ
+* l1dcache_associativity_32 --> energy is 168.259472 mJ
+* l1dcache_associativity_64 --> energy is 280.650614 mJ
+
+* l1dcachesize_16kB --> energy is 75.211444 mJ
+* l1dcachesize_32kB --> energy is 74.298779 mJ
+* l1dcachesize_128kB --> energy is 153.069087 mJ  
+
+* l1icache_associativity_1 --> energy is 130.580376 mJ  
+* l1icache_associativity_2 --> energy is 134.292457 mJ 
+* l1icache_associativity_16 --> energy is 139.939999 mJ
+* l1icache_associativity_256 --> energy is 123.935577 mJ  
+ 
+* l1icache_size_16 --> energy is 123.362208 mJ  
+* l1icache_size_64 --> energy is 157.831262 mJ 
+* l1icache_size_128 --> energy is 181.737013 mJ  
+
+* l2cache_associativity_1 --> energy is 125.096851 mJ
+* l2cache_associativity_16 --> energy is 124.009691 mJ
+* l2cache_associativity_64 --> energy is 125.596278 mJ 
+* l2cache_associativity_256 --> energy is 124.267460 mJ
+
+* l2cache_size_512 --> energy is 127.961542 mJ
+* l2cache_size_1MB --> energy is 125.217515 mJ
+* l2cache_size_4MB --> energy is 123.157072 mJ    
+
+***********************************************************
+
+Για το **_hmmer_**:  
+* cacheline_64 --> energy is 0.057471 mJ    
+* cacheline 128 --> energy is 0.051322 mJ   
+* cacheline 256 --> energy is 0.091543 mJ    
+* cacheline 512 --> energy is 0.261710 mJ   
+* cacheline 1024 --> energy is 0.946994 mJ  
+
+* l1dcache_associativity_1 --> energy is 0.057364 mJ
+* l1dcache_associativity_2 --> energy is 0.057471 mJ
+* l1dcache_associativity_4 --> energy is 0.044596 mJ
+* l1dcache_associativity_8 --> energy is 0.046220 mJ
+* l1dcache_associativity_16 --> energy is 0.050639 mJ
+* l1dcache_associativity_32 --> energy is 0.057868 mJ
+* l1dcache_associativity_64 --> energy is 0.078206 mJ  
+
+* l1dcachesize_8kB --> energy is 0.037536 mJ
+* l1dcachesize_16kB --> energy is 0.036855 mJ
+* l1dcachesize_32kB --> energy is 0.057471 mJ
+* l1dcachesize_64kB --> energy is 0.057471 mJ
+* l1dcachesize_128kB --> energy is 0.071391 mJ  
+
+* l1icache_associativity_1 --> energy is 0.058735 mJ  
+* l1icache_associativity_2 --> energy is 0.057471 mJ  
+* l1icache_associativity_4 --> energy is 0.061293 mJ  
+* l1icache_associativity_8 --> energy is 0.063433 mJ
+* l1icache_associativity_16 --> energy is 0.066746 mJ
+* l1icache_associativity_32 --> energy is 0.071833 mJ  
+
+* l1icache_size_8 --> energy is 0.058416 mJ  
+* l1icache_size_16 --> energy is 0.058435 mJ  
+* l1icache_size_32 --> energy is 0.057471 mJ 
+* l1icache_size_64 --> energy is 0.057471 mJ 
+* l1icache_size_128 --> energy is 0.090065 mJ  
+
+* l2cache_associativity_1 --> energy is 0.057464 mJ
+* l2cache_associativity_2 --> energy is 0.057468 mJ
+* l2cache_associativity_4 --> energy is 0.057469 mJ
+* l2cache_associativity_8 --> energy is 0.057471 mJ
+* l2cache_associativity_16 --> energy is 0.057485 mJ
+* l2cache_associativity_32 --> energy is 0.057485 mJ
+* l2cache_associativity_64 --> energy is 0.057551 mJ  
+
+* l2cache_size_512 --> energy is 0.057244 mJ
+* l2cache_size_1MB --> energy is 0.057337 mJ
+* l2cache_size_2MB --> energy is 0.057471 mJ
+* l2cache_size_4MB --> energy is 0.057743 mJ   
+
+**********************************************************
+
+Για το **_libm_**:  
+* cacheline_64 --> energy is 232.761059 mJ
+* cacheline 128 --> energy is 210.373858 mJ   
+* cacheline 256 --> energy is 334.932056 mJ 
+* cacheline 512 --> energy is 904.768681 mJ   
+* cacheline 1024 --> energy is 2881.449984 mJ  
+
+* l1dcache_associativity_1 --> energy is 233.477155 mJ
+* l1dcache_associativity_2 --> energy is 232.761059 mJ
+* l1dcache_associativity_4 --> energy is 184.889790 mJ
+* l1dcache_associativity_8 --> energy is 196.386753 mJ
+* l1dcache_associativity_16 --> energy is 226.053216 mJ
+* l1dcache_associativity_32 --> energy is 272.618187 mJ
+* l1dcache_associativity_64 --> energy is 413.460174 mJ   
+
+* l1dcachesize_16kB --> energy is 143.163734 mJ
+* l1dcachesize_32kB --> energy is 144.615867 mJ
+* l1dcachesize_64kB --> energy is 232.761059 mJ
+* l1dcachesize_128kB --> energy is 290.364897 mJ  
+
+* l1icache_associativity_1 --> energy is 233.138032 mJ 
+* l1icache_associativity_2 --> energy is 232.761059 mJ  
+* l1icache_associativity_4 --> energy is 246.585985 mJ  
+* l1icache_associativity_8 --> energy is 254.310288 mJ
+* l1icache_associativity_16 --> energy is 266.108376 mJ
+* l1icache_associativity_32 --> energy is 283.738312 mJ 
+
+* l1icache_size_16 --> energy is 231.488843 mJ  
+* l1icache_size_32 --> energy is 232.761059 mJ 
+* l1icache_size_64 --> energy is 303.494180 mJ 
+* l1icache_size_128 --> energy is 353.408560 mJ  
+
+* l2cache_associativity_1 --> energy is 232.685030 mJ
+* l2cache_associativity_2 --> energy is 232.725929 mJ
+* l2cache_associativity_4 --> energy is 232.732920 mJ
+* l2cache_associativity_8 --> energy is 232.761059 mJ
+* l2cache_associativity_16 --> energy is 232.818562 mJ
+* l2cache_associativity_32 --> energy is 232.958909 mJ
+* l2cache_associativity_64 --> energy is 233.805240 mJ  
+
+* l2cache_size_1MB --> energy is 232.534142 mJ
+* l2cache_size_2MB --> energy is 232.761059 mJ
+* l2cache_size_4MB --> energy is 234.274592 mJ  
+
+*************************************************************  
+
+Για το **_libm_**:  
+* cacheline_16 --> energy is 1177.384897 mJ
+* cacheline 256 --> energy is 837.079030 mJ 
+
+* l1dcache_associativity_1 --> energy is 657.900532 mJ
+* l1dcache_associativity_16 --> energy is 635.302559 mJ
+* l1dcache_associativity_64 --> energy is 1087.340624 mJ   
+
+* l1dcachesize_16kB --> energy is 413.513086 mJ
+* l1dcachesize_32kB --> energy is 417.469931 mJ
+* l1dcachesize_128kB --> energy is 821.812740 mJ
+
+* l1icache_associativity_1 --> energy is 659.135504 mJ 
+* l1icache_associativity_16 --> energy is 757.266740 mJ  
+
+* l1icache_size_16 --> energy is 655.449414 mJ  
+* l1icache_size_64 --> energy is 867.200808 mJ 
+* l1icache_size_128 --> energy is 1013.955760 mJ 
+
+* l2cache_associativity_1 --> energy is 658.792473 mJ
+* l2cache_associativity_2 --> energy is 659.145349 mJ
+* l2cache_associativity_16 --> energy is 659.377459 mJ
+* l2cache_associativity_512 --> energy is 698.588206 mJ 
+
+* l2cache_size_512 --> energy is 654.961541 mJ
+* l2cache_size_1MB --> energy is 656.784217 mJ
+* l2cache_size_4MB --> energy is 663.003266 mJ  
+
 Τα πιθανά σφάλματα που προκύπτουν στην παραπάνω ανάλυση οφείλονται σε διάφορους παράγοντες.Αρχικά πρέπει να λάβουμε υπόψην ότι κάθε simulator όπως ο gem5 αλλά και ο mcpat δεν μπορούν να προβλέψουν τα πιθανά σφάλματα που προκύπτουν κατά την εκτέλεση τους, τα οποία αθροίζονται μαζί με αυτά που προβλέπονται από τους simulators, γεγονός που δημιουργεί ψευδή εικόνα για το εικονικό σύστημα.Λάθη ακόμα προκύπτουν και από τις πιθανές στρογγυλοποιήσεις που συμβαίνουν κατά την εκτέλεση.Το γεγονός ότι χρησιμοποιούμε δύο διαφορετικούς simulator για την ανάλυση διαφορετικών πτυχών του συστήματος επιφέρει αυξημένο αριθμό λαθών στην ανάλυση καθώς για κάθε λάθος που προκύπτει σε ένα στάδιο (π.χ gem5) αυτό θα πολλαπλασιαστεί στα επόμενα (π.χ mcpat).Γενικά μπορούμε να συμπεράνουμε ότι όσο περισσότερα στάδια εικονικής ανάλυσης προσθέτουμε (simulations) τα αποτελέσματα θα απομακρύνονται από αυτά που θα προέκυπταν από την απευθείας ανάλυση του πραγματικού συστήματος.
 
 
