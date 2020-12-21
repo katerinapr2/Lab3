@@ -209,6 +209,12 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
 * l2cache_size_2MB --> energy is 0.057471 mJ
 * l2cache_size_4MB --> energy is 0.057743 mJ   
 
+![image](https://user-images.githubusercontent.com/58628111/102758161-017deb80-437b-11eb-8439-fb879b4a8828.png)   
+![image](https://user-images.githubusercontent.com/58628111/102758172-0478dc00-437b-11eb-8afb-f5f91f2b59d9.png) ![image](https://user-images.githubusercontent.com/58628111/102758179-080c6300-437b-11eb-926a-8059071f3713.png)   
+![image](https://user-images.githubusercontent.com/58628111/102758192-0b075380-437b-11eb-9ced-4c20c988aa4a.png) ![image](https://user-images.githubusercontent.com/58628111/102758200-0e9ada80-437b-11eb-8939-bc0bb33c5440.png)   
+![image](https://user-images.githubusercontent.com/58628111/102758207-1195cb00-437b-11eb-8b0c-10063b6a2b5d.png) ![image](https://user-images.githubusercontent.com/58628111/102758220-1490bb80-437b-11eb-9aab-97478a831730.png)   
+
+
 **********************************************************
 
 Για το **_libm_**:  
