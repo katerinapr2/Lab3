@@ -160,6 +160,12 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
 * l2cache_size_1MB --> energy is 125.217515 mJ
 * l2cache_size_4MB --> energy is 123.157072 mJ    
 
+![image](https://user-images.githubusercontent.com/58628111/102759601-02178180-437d-11eb-96c5-7022918fdf98.png)   
+![image](https://user-images.githubusercontent.com/58628111/102759616-0479db80-437d-11eb-8b24-a98b5229ff72.png) ![image](https://user-images.githubusercontent.com/58628111/102759623-0774cc00-437d-11eb-842d-3cc66ecc2fff.png)   
+![image](https://user-images.githubusercontent.com/58628111/102759628-09d72600-437d-11eb-827d-7b0ad8d56301.png) ![image](https://user-images.githubusercontent.com/58628111/102759646-0cd21680-437d-11eb-98fb-f3460d51621d.png)   
+![image](https://user-images.githubusercontent.com/58628111/102759653-0fcd0700-437d-11eb-92a4-1a41727eaef5.png) ![image](https://user-images.githubusercontent.com/58628111/102759658-13608e00-437d-11eb-9eff-b75909ca5f24.png)   
+
+
 ***********************************************************
 
 Για το **_hmmer_**:  
@@ -259,7 +265,13 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
 
 * l2cache_size_1MB --> energy is 232.534142 mJ
 * l2cache_size_2MB --> energy is 232.761059 mJ
-* l2cache_size_4MB --> energy is 234.274592 mJ  
+* l2cache_size_4MB --> energy is 234.274592 mJ    
+
+![image](https://user-images.githubusercontent.com/58628111/102759303-99c8a000-437c-11eb-8924-cf0007d21fa1.png)  
+![image](https://user-images.githubusercontent.com/58628111/102759315-9d5c2700-437c-11eb-8084-f193b202c2da.png) ![image](https://user-images.githubusercontent.com/58628111/102759324-a0571780-437c-11eb-962c-e3e197cee283.png)   
+![image](https://user-images.githubusercontent.com/58628111/102759348-a947e900-437c-11eb-9353-6a4525316215.png) ![image](https://user-images.githubusercontent.com/58628111/102759356-ac42d980-437c-11eb-9370-2514137262ca.png)   
+![image](https://user-images.githubusercontent.com/58628111/102759363-af3dca00-437c-11eb-95d2-ab744c17de25.png) ![image](https://user-images.githubusercontent.com/58628111/102759373-b238ba80-437c-11eb-867d-02067c77a5c5.png)   
+
 
 *************************************************************  
 
@@ -290,6 +302,12 @@ _Όταν τρέξω δύο διαφορετικά προγράμματα_ σε 
 * l2cache_size_512 --> energy is 654.961541 mJ
 * l2cache_size_1MB --> energy is 656.784217 mJ
 * l2cache_size_4MB --> energy is 663.003266 mJ  
+
+![image](https://user-images.githubusercontent.com/58628111/102760052-a3063c80-437d-11eb-9c89-c9e01b824a1d.png)   
+![image](https://user-images.githubusercontent.com/58628111/102760063-a6012d00-437d-11eb-93d7-01bd22bd9047.png) ![image](https://user-images.githubusercontent.com/58628111/102760072-a8638700-437d-11eb-8086-15bfd30e85b4.png)   
+![image](https://user-images.githubusercontent.com/58628111/102760112-b6b1a300-437d-11eb-95e2-d2306ea34b83.png) ![image](https://user-images.githubusercontent.com/58628111/102760119-b9ac9380-437d-11eb-9658-c526230e69f3.png)   
+![image](https://user-images.githubusercontent.com/58628111/102760127-bc0eed80-437d-11eb-9300-1f2b11d05349.png) ![image](https://user-images.githubusercontent.com/58628111/102760200-d8128f00-437d-11eb-8956-044841e7da23.png)   
+
 
 Φαίνεται πως τα παραπάνω αποτελέσματα προκύπτουν από _(leakage + dynamic) * runtime_.  
 
