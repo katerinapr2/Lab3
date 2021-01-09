@@ -339,9 +339,10 @@ ARM : Energy_eff = a / (2.96053 + 0.108687) = 9.54 * a
 https://en.wikipedia.org/wiki/Processor_power_dissipation#cite_note-ActivityFactor-11   
 https://asic-soc.blogspot.com/   
 https://www.sciencedirect.com/   
-https://anysilicon.com/   
+https://anysilicon.com/ 
+_Βιβλίο "Μικροηλεκτρονικά κυκλώματα", Sedra-Smith
 _Accuracy Evaluation of GEM5 Simulator System_ (https://www.lirmm.fr/~sassate/ADAC/wp-content/uploads/2014/11/Accuracy_evaluation-ReCoSoC-2012.pdf)    
-_Quantifying Sources of Error in McPAT and Potential Impacts on Architectural Studies_ https://www.samxi.org/papers/xi_hpca2015.pdf   
+_Quantifying Sources of Error in McPAT and Potential Impacts on Architectural Studies_ (https://www.samxi.org/papers/xi_hpca2015.pdf)   
 
 
 
